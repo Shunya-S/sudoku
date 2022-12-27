@@ -1,0 +1,19 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Puzzles</h1>
+
+<div id="puzzles">
+  <table id="list">
+    <% @puzzles.each do |puzzle| %>
+      <tr>
+        <td><%= "問題#{puzzle.id}" %></td>
+        <td><%= button_to "確認する", puzzle_path(puzzle), method: :get %></td>
+        <td><%= button_to "削除する", puzzle_path(puzzle), method: :delete %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
+
+<div id="footer">
+  <%= link_to "問題を登録する", new_puzzle_path %>
+</div>

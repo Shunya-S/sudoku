@@ -1,0 +1,11 @@
+<h1><%= "問題#{@puzzle.id}" %></h1>
+
+<p style="color: green"><%= notice %></p>
+
+<div>
+  <%= render "form", puzzle: @puzzle %>
+</div>
+
+<div id="footer">
+  <%= link_to "一覧に戻る", puzzles_path %>
+</div>

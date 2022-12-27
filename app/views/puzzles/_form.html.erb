@@ -1,0 +1,127 @@
+<%= form_with(model: puzzle) do |form| %>
+  <% if puzzle.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(puzzle.errors.count, "error") %> prohibited this puzzle from being saved:</h2>
+      <ul>
+        <% puzzle.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <div id="block0">
+    <%= form.select :r0c0, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r0c0 %>
+    <%= form.select :r0c1, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r0c1 %>
+    <%= form.select :r0c2, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r0c2 %>
+    <%= form.select :r1c0, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r1c0 %>
+    <%= form.select :r1c1, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r1c1 %>
+    <%= form.select :r1c2, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r1c2 %>
+    <%= form.select :r2c0, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r2c0 %>
+    <%= form.select :r2c1, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r2c1 %>
+    <%= form.select :r2c2, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r2c2 %>
+  </div>
+  
+  <div id="block1">
+    <%= form.select :r0c3, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r0c3 %>
+    <%= form.select :r0c4, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r0c4 %>
+    <%= form.select :r0c5, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r0c5 %>
+    <%= form.select :r1c3, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r1c3 %>
+    <%= form.select :r1c4, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r1c4 %>
+    <%= form.select :r1c5, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r1c5 %>
+    <%= form.select :r2c3, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r2c3 %>
+    <%= form.select :r2c4, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r2c4 %>
+    <%= form.select :r2c5, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r2c5 %>
+  </div>
+  
+  <div id="block2">
+    <%= form.select :r0c6, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r0c6 %>
+    <%= form.select :r0c7, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r0c7 %>
+    <%= form.select :r0c8, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r0c8 %>
+    <%= form.select :r1c6, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r1c6 %>
+    <%= form.select :r1c7, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r1c7 %>
+    <%= form.select :r1c8, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r1c8 %>
+    <%= form.select :r2c6, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r2c6 %>
+    <%= form.select :r2c7, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r2c7 %>
+    <%= form.select :r2c8, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r2c8 %>
+  </div>
+  
+  <div id="block3">
+    <%= form.select :r3c0, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r3c0 %>
+    <%= form.select :r3c1, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r3c1 %>
+    <%= form.select :r3c2, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r3c2 %>
+    <%= form.select :r4c0, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r4c0 %>
+    <%= form.select :r4c1, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r4c1 %>
+    <%= form.select :r4c2, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r4c2 %>
+    <%= form.select :r5c0, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r5c0 %>
+    <%= form.select :r5c1, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r5c1 %>
+    <%= form.select :r5c2, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r5c2 %>
+  </div>
+  
+  <div id="block4">
+    <%= form.select :r3c3, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r3c3 %>
+    <%= form.select :r3c4, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r3c4 %>
+    <%= form.select :r3c5, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r3c5 %>
+    <%= form.select :r4c3, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r4c3 %>
+    <%= form.select :r4c4, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r4c4 %>
+    <%= form.select :r4c5, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r4c5 %>
+    <%= form.select :r5c3, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r5c3 %>
+    <%= form.select :r5c4, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r5c4 %>
+    <%= form.select :r5c5, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r5c5 %>
+  </div>
+  
+  <div id="block5">
+    <%= form.select :r3c6, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r3c6 %>
+    <%= form.select :r3c7, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r3c7 %>
+    <%= form.select :r3c8, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r3c8 %>
+    <%= form.select :r4c6, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r4c6 %>
+    <%= form.select :r4c7, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r4c7 %>
+    <%= form.select :r4c8, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r4c8 %>
+    <%= form.select :r5c6, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r5c6 %>
+    <%= form.select :r5c7, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r5c7 %>
+    <%= form.select :r5c8, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r5c8 %>
+  </div>
+  
+  <div id="block6">
+    <%= form.select :r6c0, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r6c0 %>
+    <%= form.select :r6c1, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r6c1 %>
+    <%= form.select :r6c2, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r6c2 %>
+    <%= form.select :r7c0, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r7c0 %>
+    <%= form.select :r7c1, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r7c1 %>
+    <%= form.select :r7c2, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r7c2 %>
+    <%= form.select :r8c0, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r8c0 %>
+    <%= form.select :r8c1, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r8c1 %>
+    <%= form.select :r8c2, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r8c2 %>
+  </div>
+  
+  <div id="block7">
+    <%= form.select :r6c3, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r6c3 %>
+    <%= form.select :r6c4, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r6c4 %>
+    <%= form.select :r6c5, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r6c5 %>
+    <%= form.select :r7c3, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r7c3 %>
+    <%= form.select :r7c4, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r7c4 %>
+    <%= form.select :r7c5, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r7c5 %>
+    <%= form.select :r8c3, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r8c3 %>
+    <%= form.select :r8c4, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r8c4 %>
+    <%= form.select :r8c5, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r8c5 %>
+  </div>
+  
+  <div id="block8">
+    <%= form.select :r6c6, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r6c6 %>
+    <%= form.select :r6c7, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r6c7 %>
+    <%= form.select :r6c8, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r6c8 %>
+    <%= form.select :r7c6, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r7c6 %>
+    <%= form.select :r7c7, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r7c7 %>
+    <%= form.select :r7c8, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r7c8 %>
+    <%= form.select :r8c6, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r8c6 %>
+    <%= form.select :r8c7, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r8c7 %>
+    <%= form.select :r8c8, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r8c8 %>
+  </div>
+  
+  <div id="submit">
+    <%= form.submit %>
+    <% if @puzzle.id != nil %>
+      <%= form.submit "問題を解く", formaction: solve_path %>
+    <% end %>
+  </div>
+<% end %>
