@@ -1,4 +1,4 @@
-<%= form_with(model: puzzle) do |form| %>
+<%= form_with(model: puzzle, id: 'puzzle') do |form| %>
   <% if puzzle.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(puzzle.errors.count, "error") %> prohibited this puzzle from being saved:</h2>
@@ -10,6 +10,8 @@
     </div>
   <% end %>
   
+  <%= form.hidden_field :id, :value => puzzle.id %>
+
   <div id="block0">
     <%= form.select :r0c0, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r0c0 %>
     <%= form.select :r0c1, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6", 6], ["7", 7], ["8", 8], ["9", 9]], include_blank: true, selected: puzzle.r0c1 %>
@@ -121,7 +123,7 @@
   <div id="submit">
     <%= form.submit %>
     <% if @puzzle.id != nil %>
-      <%= form.submit "問題を解く", formaction: solve_path %>
+      <%= form.submit "問題を解く", :onClick => ("return submitSolve('puzzle');") %>
     <% end %>
   </div>
 <% end %>

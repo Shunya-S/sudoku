@@ -1,0 +1,9 @@
+<h1>解答結果</h1>
+
+<%= render "puzzle", puzzle: @puzzle %>
+
+<br>
+
+<div id="footer">
+  <%= link_to "問題に戻る", puzzle_path(@puzzle.id) %>
+</div>

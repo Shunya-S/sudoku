@@ -1,3 +1,12 @@
+<script>
+  function submitSolve(formid){
+    var objForm = document.getElementById(formid);
+    objForm.action=objForm.action + "/solve";
+    objForm.method="post";
+    objForm.submit();
+  }
+</script>
+
 <h1><%= "問題#{@puzzle.id}" %></h1>
 
 <p style="color: green"><%= notice %></p>
